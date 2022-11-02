@@ -13,7 +13,6 @@ todo_ref = db.collection('books')
 # garante que a rota só aceite requisições do tipo GET
 @app.route('/books', methods=['GET'])
 def get_books():
-    print(db.books)
     try:
         # Persistencia em memória
         # Check if ID was passed to URL query
